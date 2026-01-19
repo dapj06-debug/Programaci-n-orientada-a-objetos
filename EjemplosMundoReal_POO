@@ -1,16 +1,18 @@
 class estudiante:
-
+"""Esta clase contiene la información para cada estudiante"""
     def __init__(self, nombre, apellido, valor):
         self.nombre = nombre
         self.apellido = apellido
         self.valor = valor
         self.reporte_de_pagos = [] 
 
+"""Registra los pagos realizados"""
     def registrar_pago(self, valor):
         nuevo_pago = valor
         self.reporte_de_pagos.append(nuevo_pago)
         print(f"Pago registrado: {nuevo_pago}")
 
+"""Se realiza un reporte con los pagos realizados"""
     def mostrar_reporte_de_pagos(self):
         print("Reporte de pagos:")
         for pago in self.reporte_de_pagos:
@@ -31,13 +33,13 @@ class estudiante:
         print(f"Saldo pendiente: {self.saldo_pendiente()}")
 
 class pago:
-
+"""Esta clase enlaza los pagos realizados con el estudiante y se comunican entre clases"""
     def __init__(self, estudiante, valor):
         self.estudiante = estudiante
         self.valor = valor
         self.estudiante.registrar_pago(self.valor)
         print(f"Pago de {self.valor} realizado para {self.estudiante.nombre} {self.estudiante.apellido}")
-
+#ejemplos para ejecucion
 def main():
     estudiante1 = estudiante("Ana", "Gomez", 350)
     estudiante2 = estudiante("Luis", "Martinez", 400)
