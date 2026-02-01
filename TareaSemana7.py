@@ -20,7 +20,9 @@ vehiculos2 = ContadorVehiculos(200, "Acceso 2")
 print(vehiculos2.total_vehiculos())
 vehiculos3 = ContadorVehiculos(300, "Acceso 3")
 print(vehiculos3.total_vehiculos())
-
+del vehiculos1
+del vehiculos2
+del vehiculos3
 
 
 class Visitantes:
@@ -43,6 +45,9 @@ visitantes_martes = Visitantes(350, "Martes")
 print(visitantes_martes.total_visitantes())
 visitantes_miércoles = Visitantes(300, "Miércoles")
 print(visitantes_miércoles.total_visitantes())
+del visitantes_lunes
+del visitantes_martes  
+del visitantes_miércoles
 
 
 class Asistentes:
@@ -65,4 +70,8 @@ Seminario = Asistentes(250, "Seminario de Tecnología")
 print(Seminario.total_asistentes())
 Aniversario = Asistentes(300, "Aniversario de la Empresa")
 print(Aniversario.total_asistentes())
+del Concierto
+del Seminario
+del Aniversario
+
 
