@@ -48,7 +48,7 @@ def main():
     pago3 = pago(estudiante2, 80)
     pago4 = pago(estudiante2, 30)
     pago5 = pago(estudiante3, 30)
-    pago6 = pago(estudiante3, 50)
+    pago6 = pago(estudiante3, 60)
     pago7 = pago(estudiante1, 40)
 
     estudiante1.mostrar_estado_de_pagos()
