@@ -1,0 +1,8 @@
+p1|arroz|100|50.0
+p2|azucar|200|50.0
+p3|aceite|90|2.0
+p4|atun|150|2.0
+p5|jugo|80|1.0
+p6|fregol|70|1.0
+p7|manteca|40|1.0
+p8|mantequilla|100|1.0
